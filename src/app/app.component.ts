@@ -1,3 +1,4 @@
+import { Servicio1Service } from './servicio1.service';
 import { Component } from '@angular/core';
 
 @Component({
@@ -9,7 +10,11 @@ export class AppComponent {
   title = 'app';
   public hoy = new Date();
   public nombre: string = "Javier Romualdo";
+  public numero: number = 0;
 
+  constructor(public servicio1: Servicio1Service){
+
+  }
   calcularFechas(){
     var dia;
     var mes;
@@ -18,5 +23,9 @@ export class AppComponent {
     mes = this.hoy.getMonth();
     anio = this.hoy.getFullYear();
     console.log(this.hoy);
+  }
+
+  obtenerNumeroDeServicio(){
+    this.numero = this.servicio1.getNumero();
   }
 }

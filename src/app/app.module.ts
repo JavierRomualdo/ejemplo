@@ -10,6 +10,7 @@ import { AppComponent } from './app.component';
 import { Componente2Component } from './componente2/componente2.component';
 import { Componente3Component } from './componente3/componente3.component';
 import { AppRouterModule } from './app.routing';
+import { Servicio1Service } from './servicio1.service';
 
 
 @NgModule({
@@ -25,7 +26,9 @@ import { AppRouterModule } from './app.routing';
     BrowserAnimationsModule,
     AppRouterModule
   ],
-  providers: [],
+  providers: [
+    Servicio1Service
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
