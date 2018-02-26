@@ -1,0 +1,19 @@
+.clase1 {
+  background-color: cyan;
+  height: 400px;
+  width: 400px;
+}
+
+.cabecera {
+  height: 30px;
+  width: 100%;
+  background-color: cyan;
+  text-align: center;
+}
+
+.footer {
+  height: 30px;
+  width: 100%;
+  background-color: red;
+  text-align: center;
+}
